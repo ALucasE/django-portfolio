@@ -1,0 +1,52 @@
+
+{% extends 'layout.html'%}
+
+{% block content %}
+
+{% load static %}
+
+<header class="row bg-body-secondary">
+    <div class="col-md-4">
+        <img src="{% static 'porfolio/LucasAcosta.jpg' %}" class="card-img" style="max-width: 300px;"/>
+    </div>
+    <div class="col-md-8 my-auto">
+        <h1>Yo soy <strong>Lucas Acosta</strong></h1>
+        <h3>Soy Developer FullStack Python</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis tempora perspiciatis molestias iusto ducimus
+            soluta mollitia ratione, fuga praesentium, reiciendis minima! Facere, veniam! Omnis, quod molestias quo fugit enim
+            vero vitae, cumque tenetur at, impedit provident dicta laudantium quia facilis consequuntur blanditiis iste
+            laborum voluptatibus libero doloribus? Pariatur voluptatem obcaecati deserunt aperiam exercitationem nam voluptas
+            rerum reprehenderit minima, earum impedit saepe eos ducimus fugit itaque a nulla omnis architecto laudantium
+            blanditiis? Eius ipsum quidem enim architecto fugiat porro inventore libero praesentium aperiam nulla
+            exercitationem nemo soluta, culpa impedit est et doloribus ut necessitatibus odit, dicta voluptate! Vero ab nulla
+            placeat.
+        </p>
+        <a class="btn btn-primary btn-sm" href="{% static 'porfolio/CV.pdf' %}" target="_blank">Descargar CV</a>
+    </div>
+</header>
+
+<div class="row my-4">
+
+    <h1 class="text-center">Proyectos</h1>
+
+    {% for proyecto in proyectos %}
+    <div class="card mb-3 bg-secondary">
+        <div class="row g-0">
+          <div class="col-md-8 p-4">
+            <div class="card-body">
+              <h5 class="card-title">{{proyecto.titulo}}</h5>
+              <p class="card-text">{{proyecto.descripcion}}</p>
+              {% if proyecto.url %}
+              <p>Visita el proyecto <a href="{{proyecto.url}}" target="_blank" rel="noopener noreferrer">{{proyecto.titulo}}</a></p>
+              {% endif %}
+            </div>
+          </div>
+          <div class="col-md-4 p-3">
+            <img src="{{proyecto.imagen.url }}" alt="{{proyecto.titulo}}" class="img-fluid">
+          </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
