@@ -105,7 +105,12 @@ El sitio estará disponible en http://localhost:8000/.
 ## Capturas de Pantalla
 
 - **Inicio**
+![image](https://github.com/user-attachments/assets/01bd7924-1619-47b7-a94c-13245902e5f0)
+
 - **Blog**
+![image](https://github.com/user-attachments/assets/99d6f870-9b0a-47b3-b027-69759fe8cf7c)
+![image](https://github.com/user-attachments/assets/28687c05-ae56-4f13-8011-3ae4b59c4b82)
+
 
 ## Contribuciones
 
