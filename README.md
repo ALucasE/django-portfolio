@@ -1,4 +1,4 @@
-# Portfolio y Blog en Django
+# Portfolio en Django
 
 Este proyecto es un completo portfolio personal desarrollado en Django que integra un sistema de blogging. El objetivo principal es mostrar mis habilidades, proyectos y experiencia, además de proporcionar un espacio para compartir publicaciones y artículos relacionados con mi campo de interés.
 
